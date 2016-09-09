@@ -2,6 +2,10 @@
     bootstrap="tests/bootstrap.php"
     colors="true">
 
+  <logging>
+        <log type="coverage-clover" target="clover.xml"/>
+  </logging>
+
   <testsuites>
     <testsuite>
       <directory>.</directory>
