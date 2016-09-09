@@ -7,4 +7,4 @@ php:
 script: phpunit ./tests/CalcTest.php
 
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
