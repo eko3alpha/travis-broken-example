@@ -6,6 +6,6 @@ class CalcTest extends PHPUnit_Framework_TestCase
     {
         $calc = new Calc;
         $test = $calc->add(1)->add(1)->is();
-		$this->assertEquals($test, 2);
+		$this->assertEquals($test, 22);
   	}
 }
