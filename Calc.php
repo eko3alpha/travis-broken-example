@@ -17,7 +17,7 @@ class Calc
 
     public function subtract($subtract)
     {
-        $this->result = $this->result - $subtract;
+        $this->result -= $subtract;
         return $this;
     }
 
