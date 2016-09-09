@@ -15,6 +15,12 @@ class Calc
         return $this;
     }
 
+    public function subtract($subtract)
+    {
+        $this->result = $this->result - $subtract;
+        return $this;
+    }
+
     public function is()
     {
         return $this->result;
