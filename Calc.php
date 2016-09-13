@@ -11,19 +11,28 @@ class Calc
 
     public function add($add)
     {
-        $this->result = $this->result + $add;
+        $this->result += $add;
         return $this;
     }
 
     public function subtract($subtract)
     {
-        $this->result -= $subtract;
+        return $this->add(-$subtract);
+    }
+
+    public function multiply($multiply)
+    {
+        $this->result *= $multiply;
         return $this;
+    }
+
+    public function divide($divide)
+    {
+        return $this->multiply(1/$divide);
     }
 
     public function is()
     {
         return $this->result;
     }
-
 }
