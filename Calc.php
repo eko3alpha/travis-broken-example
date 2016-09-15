@@ -28,7 +28,7 @@ class Calc
 
     public function divide($divide)
     {
-        return $this->multiply(1/$divide);
+        return $this->multiply(1 / $divide);
     }
 
     public function is()
